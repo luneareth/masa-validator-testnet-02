@@ -26,7 +26,7 @@ If you have nodekey before you could restore, go to Restore Validator
 If you did not have nodekey before, you could backup in
 # cat  /${HOME}/MASA/masa-node/masa-storage/vol-01/dd/geth/nodekey
 If you want look status system, go to Simple CLI Interactive
-$ bash cli.sh
+# bash cli.sh
 ```
 note: change ${USER} with your username 
 
