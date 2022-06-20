@@ -16,9 +16,12 @@ OS : Ubuntu ^20.04
 # wget -c https://github.com/luneareth/masa-validator-tesnet-02/archive/refs/heads/main.zip
 # unzip main.zip
 # mv masa-validator-tesnet-02 Source
+go to Setup Environment
+# mv Source /home/${USER}/
+# su - ${USER}
 # cd Source
 ```
- 
+note: change ${USER} with your username 
 
 ### Setup Environment
 Running As Root
