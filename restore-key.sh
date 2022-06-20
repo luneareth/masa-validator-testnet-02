@@ -3,7 +3,7 @@
 HOME="/home/gneareth"
 
 
-echo Your APP MASSA in ${HOME}
+echo Your APP MASA in ${HOME}
 
 if [ $UID -eq 0 ]
 then
@@ -11,7 +11,7 @@ then
   length_count=`echo ${data} | wc -m`
   if [ $length_count == 65 ]
   then
-     echo "${data}" | tee ${HOME}/MASSA/masa-node/masa-storage/vol-01/dd/geth/nodekey
+     echo "${data}" | tee ${HOME}/MASA/masa-node/masa-storage/vol-01/dd/geth/nodekey
      docker restart masa-node-backend
   else
     echo "length not 64 character"
