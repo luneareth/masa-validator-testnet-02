@@ -9,11 +9,12 @@ OS : Ubuntu ^20.04
 ```
 
 ### Download
-```
-wget -c https://github.com/luneareth/masa-validator-tesnet-02/archive/refs/heads/main.zip
-unzip main.zip
-mv masa-validator-tesnet-02 Source
-cd Source
+```bash
+# apt install wget
+# wget -c https://github.com/luneareth/masa-validator-tesnet-02/archive/refs/heads/main.zip
+# unzip main.zip
+# mv masa-validator-tesnet-02 Source
+# cd Source
 ```
  
 
