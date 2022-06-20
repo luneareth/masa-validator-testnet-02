@@ -16,10 +16,10 @@ bash setup-env.sh
 
 
 
-### Install Massa
+### Install Masa
 Running As User
 ```bash
-bash massa.sh
+bash masa.sh
 ```
 
 

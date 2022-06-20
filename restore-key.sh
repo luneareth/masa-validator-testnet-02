@@ -11,8 +11,8 @@ then
   length_count=`echo ${data} | wc -m`
   if [ $length_count == 65 ]
   then
-     echo "${data}" | tee ${HOME}/MASSA/massa-node/massa-storage/vol-01/dd/geth/nodekey
-     docker restart massa-node-backend
+     echo "${data}" | tee ${HOME}/MASSA/masa-node/masa-storage/vol-01/dd/geth/nodekey
+     docker restart masa-node-backend
   else
     echo "length not 64 character"
   fi

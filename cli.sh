@@ -8,4 +8,4 @@ echo -e "1. node data directory with configs and keys - admin.datadir
 8. show connected peer count - net.peerCount
 9. enode - web3.admin.nodeInfo.enode"
 
-docker exec -it massa-node-backend geth attach /qdata/dd/geth.ipc 
+docker exec -it masa-node-backend geth attach /qdata/dd/geth.ipc 
