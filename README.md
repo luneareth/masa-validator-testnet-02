@@ -20,6 +20,13 @@ go to Setup Environment
 # mv Source /home/${USER}/
 # su - ${USER}
 # cd Source
+go to Install Masa
+If you have nodekey before you could restore, go to Restore Validator
+# bash restore-key.sh 
+If you did not have nodekey before, you could backup in
+# cat  /${HOME}/MASA/masa-node/masa-storage/vol-01/dd/geth/nodekey
+If you want look status system, go to Simple CLI Interactive
+$ bash cli.sh
 ```
 note: change ${USER} with your username 
 
