@@ -30,6 +30,20 @@ fi
 apt-get update -y
 apt-get install docker-compose zsh docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 useradd -m -G admin,docker -U  -s /bin/zsh ${USER}
+
+grep -q "swapfile" /etc/fstab
+if [[ ! $? -ne 0 ]]; then
+   echo -e '\n\e[42m[Swap] Swap file exist, skip.\e[0m\n'
+else
+   fallocate -l 4G /swapfile
+   dd if=/dev/zero of=/swapfile bs=1K count=4M
+   chmod 600 /swapfile
+   mkswap /swapfile
+   swapon /swapfile
+   swapon --show
+   echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
+fi
+
 su - ${USER} -c 'cd ~/ ; sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";exit 0'
 passwd ${USER}
 cat > zshrc <<EOF
