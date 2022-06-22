@@ -3,9 +3,9 @@
 ### Requierment
 
 ```
-2 vCPU
-4 GB RAM
-50 GB Disk
+1 vCPU
+2 GB RAM
+30 GB Disk
 
 OS : Ubuntu ^20.04
 ```
